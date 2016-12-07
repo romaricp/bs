@@ -61,7 +61,7 @@ gulp.task('default', ['styles', 'scripts'], function(){
     ignorePath: ['src', 'dist']
   };
 
-  return gulp.src('src/index.html')
+  return gulp.src('src/*.html')
     .pipe(inject(injectFilesCss, injectOptions))
     .pipe(inject(injectFilesJs, injectOptions))
     .pipe(gulp.dest('dist'));
@@ -69,4 +69,7 @@ gulp.task('default', ['styles', 'scripts'], function(){
 
 gulp.task('watch', function(){
   gulp.watch('src/*', ['default']); 
+  gulp.watch('src/styles/*', ['default']); 
+  gulp.watch('src/scripts/*', ['default']); 
+  gulp.watch('src/global/*', ['default']); 
 })
