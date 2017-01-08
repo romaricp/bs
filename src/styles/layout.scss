@@ -2,6 +2,9 @@
 //layout gallerie XL
 
 @media(min-width:1440px) {
+	.container {
+		width: 1400px;
+	}
 	.col-xl-2,
 	.col-xl-4,
 	.col-xl-6,
@@ -23,7 +26,25 @@
 	.col-xl-8 {
 		width:80%;
 	}
+
+	.visible-xl {
+		display: block;
+	}
+
+	.hidden-xl {
+		display: none;
+	}
 } 
+
+@media (max-width:1439px) {
+	.visible-xl {
+		display: none;
+	}
+}
+
+.project + .project {
+	margin-top: 100px;
+}
 
 // gallery 
 .gallery {
@@ -40,7 +61,30 @@
 	}
 
 	> div  {
-		padding: 0.5px!important;
+		//padding: 0.5px!important;
+		position: relative;
+	}
+
+	> div:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 1px;
+		background: #fff;
+	}
+
+	> div:before {
+		content: "";
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+		width: 100%;
+		background: #fff;
 	}
 
 	.container-gallery .bg-pink {
@@ -49,10 +93,87 @@
 	}
 }
 
+@media(max-width:767px) {
+	.gallery {
 
-// header 
-.logo {
-	max-width: 80px;
+		.col-md-4 {
+			position: inherit;
+			margin-top:0px;
+
+			img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.container-gallery .bg-pink {
+			display: block;
+		}
+
+		.tips {
+			margin: 40px 20px;
+		}
+	}
+}
+
+// nav project 
+.nav-project {
+	margin: 40px 0;
+	float: left;
+	width: 100%;
+
+	h3 {
+		font-size: 0.8em;
+			a {
+				color: $black;
+				text-decoration: underline;
+			}
+	}
+	.prev h3:before {
+		content: "";
+		float: left;
+		width: 15px;
+		height: 20px;
+		background: url("../img/back.svg") center center no-repeat;
+		margin-right: 20px;
+	}
+
+	.next h3:after {
+		content: "";
+		float: right;
+		width: 15px;
+		height: 20px;
+		background: url("../img/next.svg") center center no-repeat;
+		margin-left: 20px;
+	}
+	.next {
+		text-align: right;
+	}
+}
+
+
+// header
+
+header {
+	padding-left: 5%;
+	padding-right: 5%;
+
+	a:hover, 
+	a:active, 
+	a:focus {
+		text-decoration: none;
+	}
+	h2 {
+		font-size: 1.20em; 
+		margin: 0;
+
+		a {
+			color: $black;
+		}
+
+		span {
+			letter-spacing: 5px;
+		}
+	}
 }
 
 .container.header {
@@ -60,30 +181,33 @@
 }
 
 .navbar {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 20px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
 
-	h1 {
-		display: inline;
-		font-size: 1em;
-		font-family: $sans-serif;
+@media(max-width: 767px) {
+	header {
+		padding-left: 15px;
+		padding-right:15px;
+
+		h2 {
+		}
 	}
 }
 
 // content 
 .content {
-	margin-top: 80px;
+	
 }
 
 // HP 
 .home {
 	.content {
-		min-height: 100vh;
-		display:flex;
-		align-items:center;
-		margin-top:0;
+		position: absolute;
+		top: 50%;
+		margin-top: -80px;
+		left: 0;
+		right: 0;
 	}
 
 	h1 {
@@ -91,5 +215,56 @@
 	}
 }
 
+
+// breadcrumb 
+.breadcrumb {
+	font-size: .65em;
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 8px;
+
+	h1 {
+		font-family: $sans-serif;
+		margin-bottom: 0;
+		margin-top: 0;
+		font-size: 15.6px; 
+		letter-spacing: 0;
+		display: inline;
+	}
+	
+	h1:after {
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background: url("../img/next.svg") center center no-repeat;
+		margin-left: 5px;	
+		margin-right: 15px;
+
+	}
+
+	ul {
+		padding-left: 0;
+		display: inline;
+	}
+
+	li {
+		list-style: none;
+		display: inline;
+	}
+
+	li+li:before {
+		content: "/";
+		color: $pink;
+	}
+}
+
+@media(max-width:989px) {
+	.breadcrumb {
+		text-align: left;
+		line-height: 1.4;
+		padding-right: 50px;
+	}
+}
 
 
