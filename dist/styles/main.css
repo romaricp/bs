@@ -5882,6 +5882,12 @@ h3 {
   .tips ul li {
     list-style: none; }
 
+a.btn {
+  font-family: "Lora", serif;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: .75em; }
+
 @media (max-width: 767px) {
   h1, .h1 {
     font-size: 2em; } }
@@ -5907,13 +5913,16 @@ footer {
   background-color: #eee;
   text-align: center;
   padding: 15px;
-  font-size: 0.4em; }
+  font-size: 0.6em; }
   footer p {
     margin-bottom: 0; }
 
 .clear {
   clear: both;
   display: block; }
+
+body {
+  overflow-x: hidden; }
 
 @media (min-width: 1440px) {
   .container {
@@ -5946,8 +5955,8 @@ footer {
 .gallery .col-md-4 {
   position: absolute;
   top: 50%;
-  margin-top: -150px;
-  right: 20px; }
+  margin-top: -100px;
+  right: -10px; }
 
 .gallery .col-xs-1, .gallery .col-sm-1, .gallery .col-md-1, .gallery .col-lg-1, .gallery .col-xs-2, .gallery .col-sm-2, .gallery .col-md-2, .gallery .col-lg-2, .gallery .col-xs-3, .gallery .col-sm-3, .gallery .col-md-3, .gallery .col-lg-3, .gallery .col-xs-4, .gallery .col-sm-4, .gallery .col-md-4, .gallery .col-lg-4, .gallery .col-xs-5, .gallery .col-sm-5, .gallery .col-md-5, .gallery .col-lg-5, .gallery .col-xs-6, .gallery .col-sm-6, .gallery .col-md-6, .gallery .col-lg-6, .gallery .col-xs-7, .gallery .col-sm-7, .gallery .col-md-7, .gallery .col-lg-7, .gallery .col-xs-8, .gallery .col-sm-8, .gallery .col-md-8, .gallery .col-lg-8, .gallery .col-xs-9, .gallery .col-sm-9, .gallery .col-md-9, .gallery .col-lg-9, .gallery .col-xs-10, .gallery .col-sm-10, .gallery .col-md-10, .gallery .col-lg-10, .gallery .col-xs-11, .gallery .col-sm-11, .gallery .col-md-11, .gallery .col-lg-11, .gallery .col-xs-12, .gallery .col-sm-12, .gallery .col-md-12, .gallery .col-lg-12 {
   padding: 0; }
@@ -6051,6 +6060,24 @@ header {
   left: 0;
   right: 0; }
 
+.home h1 a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px; }
+
+.home h1 a:hover {
+  text-decoration: none; }
+
+.home h1 a:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8px;
+  background: url(../img/dotted.svg) repeat-x; }
+
 .breadcrumb {
   font-size: .65em;
   text-align: center;
@@ -6104,7 +6131,10 @@ header {
     display: inline;
     float: left;
     list-style: none;
-    margin-right: 30px; }
+    margin-right: 30px;
+    margin-bottom: 15px; }
+    .contact li a {
+      color: #000; }
   .contact li:before {
     content: "";
     float: left;
@@ -6114,6 +6144,15 @@ header {
     margin-top: -5px;
     background: #cf1a3f;
     margin-right: 10px; }
+  .contact li:first-child:before {
+    background: url(../img/mail.svg) center center no-repeat #cf1a3f;
+    background-size: 55%; }
+  .contact li:nth-child(2):before {
+    background: url(../img/linkedin.svg) center center no-repeat #cf1a3f;
+    background-size: 55%; }
+  .contact li:last-child:before {
+    background: url(../img/phone.svg) center center no-repeat #cf1a3f;
+    background-size: 55%; }
 
 .profil h3 {
   font-family: "AvenirNext-Bold", Helvetica, Arial, sans-serif;
@@ -6144,6 +6183,25 @@ header {
     margin: auto;
     margin-bottom: 20px;
     background: #cf1a3f; }
+
+.profil .experience.voyage h3:before {
+  background: url(../img/plane.svg) center center no-repeat #cf1a3f;
+  background-size: 55%; }
+
+.profil .experience.travelgram h3:before {
+  background: url(../img/travelgram.svg) center center no-repeat #fc6d4b;
+  background-size: 55%; }
+
+.profil .experience.lba h3:before {
+  background: url(../img/lba.png) center center no-repeat #e52525;
+  background-size: 55%; }
+
+.profil .experience.orthodidacte h3:before {
+  background: url(../img/orthodidacte.png) center center no-repeat, linear-gradient(to right, #99ca3c 0%, #009bdf 100%); }
+
+.profil .experience.ookapi h3:before {
+  background: url(../img/ookapi.svg) center center no-repeat #f06625;
+  background-size: 55%; }
 
 .competence {
   text-transform: uppercase;
@@ -6196,7 +6254,10 @@ header {
 
 .hobbit {
   font-family: "Avenir-Book", Helvetica, Arial, sans-serif;
-  margin: 100px auto; }
+  margin: 100px auto 50px; }
+
+.cv {
+  margin-bottom: 50px; }
 
 header .burger {
   position: absolute;
@@ -6286,6 +6347,8 @@ header .burger.open span:after {
     color: #FFF;
     font-size: 1.25em;
     font-family: "AvenirNext-Bold", Helvetica, Arial, sans-serif; }
+  .mobmenu a:hover {
+    opacity: .8; }
   .mobmenu .cursive {
     font-size: 0.65em;
     position: relative; }
