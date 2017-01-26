@@ -6000,6 +6000,10 @@ body {
   .gallery .tips {
     margin: 40px 20px; } }
 
+@media (min-width: 500px) and (max-width: 767px) {
+  .gallery .col-xs-12 {
+    width: 50%; } }
+
 .nav-project {
   margin: 40px 0;
   float: left;
