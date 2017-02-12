@@ -5890,7 +5890,9 @@ a.btn {
 
 @media (max-width: 767px) {
   h1, .h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+  h2, .h2 {
+    font-size: 1.5em; } }
 
 .project h3.desc {
   font-size: 1em;
@@ -6385,13 +6387,24 @@ header .burger.open span:after {
   height: 530px;
   background: url(../img/cover-travelgram.jpg) center center no-repeat;
   background-size: cover;
-  color: #FFF; }
+  color: #FFF;
+  position: relative;
+  margin-bottom: 40px; }
   .travelgram.header .navbar a {
     color: #FFF; }
   .travelgram.header .burger span,
   .travelgram.header .burger span:before,
   .travelgram.header .burger span:after {
     background: #FFF; }
+  .travelgram.header .burger.open span {
+    background: transparent; }
+  .travelgram.header .container {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0; }
+  .travelgram.header h1 {
+    margin-bottom: 15px; }
 
 .travelgram.content .logo,
 .travelgram.content .webdesign,
@@ -6400,15 +6413,19 @@ header .burger.open span:after {
 
 .travelgram.content .title {
   text-transform: uppercase;
-  font-family: "AvenirNext-Bold", Helvetica, Arial, sans-serif; }
+  font-family: "AvenirNext-Bold", Helvetica, Arial, sans-serif;
+  margin-bottom: 40px; }
   .travelgram.content .title .number {
     font-family: "Lora", serif;
     font-size: 2.5em; }
   .travelgram.content .title h2 {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 0; }
 
 .travelgram.content h3.desc {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  font-size: 1em;
+  line-height: 1.5; }
 
 .travelgram.content .logo {
   background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
@@ -6417,9 +6434,9 @@ header .burger.open span:after {
   .travelgram.content .logo .row {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 20px; }
-  .travelgram.content .logo .col-sm-6 > img {
+  .travelgram.content .logo .col-xs-6 > img {
     max-width: 200px; }
 
 .travelgram.content .colors {
@@ -6455,7 +6472,8 @@ header .burger.open span:after {
     font-family: "Lora", serif;
     max-width: 480px;
     text-align: center;
-    position: relative; }
+    position: relative;
+    font-style: italic; }
   .travelgram.content .bg-red p:before {
     content: "\201C";
     font-size: 4em;
@@ -6473,3 +6491,56 @@ header .burger.open span:after {
   .travelgram.content .bg-red img {
     margin-bottom: -100px;
     margin-top: 70px; }
+
+@media (max-width: 990px) {
+  .travelgram.content .logo .row {
+    display: block !important; } }
+
+@media (max-width: 767px) {
+  .number {
+    font-size: 1.5em !important; } }
+
+@media (max-width: 550px) {
+  .logo .col-xs-6 {
+    width: 100%; }
+  .logo .colors {
+    margin-top: 50px; } }
+
+.comm .title {
+  margin-top: 60px; }
+
+.comm ul {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  float: left; }
+  .comm ul li {
+    display: inline;
+    list-style: none;
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #cf1a3f;
+    font-size: .75em;
+    margin-right: 30px;
+    float: left;
+    margin-bottom: 20px; }
+  .comm ul li:before {
+    content: "";
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-right: 10px; }
+  .comm ul li:first-child:before {
+    background: url(../img/facebook.svg) center center no-repeat; }
+  .comm ul li:nth-child(2):before {
+    background: url(../img/twitter.svg) center center no-repeat; }
+  .comm ul li:last-child:before {
+    background: url(../img/download-pink.svg) center center no-repeat;
+    background-size: 75%; }
+
+.comm .fb-mobile .col-xs-6 {
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  margin-bottom: 2px; }
