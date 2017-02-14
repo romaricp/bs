@@ -1,0 +1,233 @@
+.travelgram.header {
+	height: 530px; 
+	background: url(../img/cover-travelgram.jpg) center center no-repeat;
+	background-size: cover;
+	color: $white;
+	position: relative;
+	margin-bottom: 40px;
+
+	.navbar a {
+		color: $white;
+	}
+
+	.burger span, 
+	.burger span:before,
+	.burger span:after {
+		background: $white;
+	}
+
+	.burger.open span {
+		background: transparent;
+	}
+
+	.container {
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+	}
+
+	h1 {
+		margin-bottom: 15px;
+	}
+}
+
+.travelgram.content {
+
+	.logo,
+	.webdesign,
+	.comm {
+		margin-bottom: 100px;
+	}
+
+	.title {
+		text-transform: uppercase; 
+		font-family: $title;
+		margin-bottom: 40px;
+
+		.number {
+			font-family: $serif;
+			font-size: 2.5em;
+		}
+
+		h2 {
+			margin-top: 15px;
+			margin-bottom: 0;
+		}
+	}
+
+	h3.desc {
+		font-family: $serif;
+		font-size: 1em;
+		line-height: 1.5;
+	}
+
+	.logo {
+		background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 100%);
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		.row {
+			display:flex;
+			align-items:center;
+			margin-bottom: 30px;
+			margin-top: 20px;
+		}
+
+		.col-xs-6>img {
+			max-width: 200px;
+		}
+	}
+
+	.colors {
+
+		width: 230px;
+
+		>div {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 15px;
+			margin-bottom: 15px;
+		}
+
+		span {
+			color: $white;
+			display: block;
+			text-align: center;
+			padding-top: 65px;
+			font-size: .8em;
+		}
+
+		.red {
+			background: #fc6d4b
+		}
+
+		.green {
+			background: #4cffc1;
+		}
+
+		.grey {
+			background: #333333;
+			clear: both;
+		}
+	}
+	.bg-red {
+		background: #fc6d4b;
+		color: $white;
+		text-align: center;
+		padding-top: 70px;
+		margin-bottom: 100px;
+		margin-top: 100px;
+
+		p {
+			font-family: $serif;
+			max-width: 480px;
+			text-align: center;
+			position: relative;
+			font-style: italic;
+		}
+		p:before {
+			content: "\201C";
+			font-size: 4em;
+			opacity: .3;
+			position: absolute;
+			left: 0;
+			top: -40px;
+		}
+
+		p:after {
+			content: "\201D";
+			font-size: 4em;
+			opacity: .3;
+			position: absolute;
+			float:right;
+			right: 0;
+		}
+
+		img {
+			margin-bottom: -100px;
+			margin-top: 70px;
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	.travelgram.content .logo .row {
+		display: block!important;
+	}
+}
+
+@media (max-width: 767px) {
+	.number {
+		font-size: 1.5em!important; 
+	}
+}
+
+@media (max-width:550px) {
+	.logo .col-xs-6 {
+		width: 100%;
+	}
+	.logo .colors {
+		margin-top: 50px;
+	}
+}
+
+.comm {
+	.title {
+		margin-top: 60px;
+	}
+	ul {
+		padding-left: 0;
+		margin-top: 10px;
+		margin-bottom: 50px;
+		float: left;
+
+		li {
+			display: inline;
+			list-style: none;
+			font-family: $serif;
+			font-style: italic;
+			color: $pink;
+			font-size: .75em;
+			margin-right: 30px;
+			float: left;
+			margin-bottom: 20px;
+		}
+
+		li:before {
+			    content: "";
+			    float: left;
+			    width: 30px;
+			    height: 30px;
+			    border-radius: 50%;
+			    margin-top: -5px;
+			    margin-right: 10px;
+		}
+		
+		li:first-child:before {
+			background: url(../img/facebook.svg) center center no-repeat;
+		}
+
+		li:nth-child(2):before {
+			background: url(../img/twitter.svg) center center no-repeat;
+		}
+
+		li:last-child:before {
+			background: url(../img/download-pink.svg) center center no-repeat;
+			background-size: 75%;
+		}
+	}
+
+	.fb-mobile {
+		.col-xs-6 {
+			padding-left: 0.5px;
+			padding-right: 0.5px;
+			margin-bottom: 2px;
+		}
+	}
+}
+
+
+
+

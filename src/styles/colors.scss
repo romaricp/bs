@@ -1,0 +1,165 @@
+$pink : #cf1a3f;
+$white : #FFF;
+$black :#000;
+$light-grey: #eee;
+$blue-fm : #0092d6;
+
+body {
+	color: $black;
+}
+
+.bg-pink {
+	background-color : $pink;
+	color: #fff;
+}
+
+
+// colors gallery project
+.project {
+	.bg-color,
+	.bg-pink {
+		float: left;
+		width: 100%;
+	}
+}
+
+.gallery-fm .bg-color {
+	background-color : $blue-fm;
+	color: #fff; 
+}
+
+.gallery-opinel .bg-color {
+	background-color : $blue-fm;
+	color: #fff; 
+}
+
+.pink {
+	color: $pink!important;
+}
+
+// fonts 
+
+$cursive :'Indie Flower', cursive;
+$serif : 'Lora', serif;
+$sans-serif : 'Avenir-Book', Helvetica, Arial, sans-serif;
+$title : 'AvenirNext-Bold', Helvetica, Arial, sans-serif;
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('fonts/Avenir-Book/Avenir-Book.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('fonts/Avenir-Book/Avenir-Book.ttf')  format('truetype'), url('fonts/Avenir-Book/Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url('fonts/AvenirNext-Bold/AvenirNext-Bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('fonts/AvenirNext-Bold/AvenirNext-Bold.ttf')  format('truetype'), url('fonts/AvenirNext-Bold/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: $sans-serif;
+}
+
+h1, .h1 {
+	font-family: $title;
+	font-size: 3em;
+	margin-bottom:40px;
+	letter-spacing: -3px;
+}
+
+h2, .h2 {
+	//font-family: $cursive;//
+}
+
+h3 {
+	font-family: $serif;
+	font-style: italic;
+}
+
+.cursive {
+	font-family: $cursive;
+}
+
+.tips {
+	font-family: $cursive;
+
+	ul li { 
+		list-style: none;
+	}
+}
+
+a.btn {
+	font-family: $serif;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: .75em;
+}
+
+@media(max-width: 767px) {
+	h1, .h1 {
+		font-size: 2em;
+	}
+
+	h2, .h2 {
+		font-size: 1.5em;
+	}
+}
+
+// project 
+.project {
+	h3.desc {
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+
+	.info {
+		font-family: $serif;
+		font-style: italic;
+		font-size:.6em;
+	}
+
+	a.link {
+		display: block;
+		margin-bottom: 40px;
+		margin-top:40px;
+	}
+}
+
+// HP 
+.home {
+		a {
+			color: $black;
+		}
+
+}
+
+//footer 
+footer {
+	background-color: $light-grey;
+	text-align: center;
+	padding: 15px;
+	font-size: 0.6em;
+
+	p {
+		margin-bottom: 0;
+	}
+} 
+
+
+

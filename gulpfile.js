@@ -14,6 +14,16 @@ gulp.task('clean', function(cb){
   del(['dist'], cb);
 });
 
+gulp.task('php', function(){
+  return gulp.src('src/*.php')
+    .pipe(gulp.dest('dist/wp-content/themes/bs'));
+});
+
+gulp.task('css', function(){
+  return gulp.src('src/*.css')
+    .pipe(gulp.dest('dist/wp-content/themes/bs'));
+});
+
 gulp.task('styles', function(){
   var injectAppFiles = gulp.src('src/styles/*.scss', {read: false});
   var injectGlobalFiles = gulp.src('src/global/*.scss', {read: false});
@@ -42,29 +52,29 @@ gulp.task('styles', function(){
     .pipe(inject(injectAppFiles, injectAppOptions))
     .pipe(sass())
     //.pipe(csso())
-    .pipe(gulp.dest('dist/styles'));
+    .pipe(gulp.dest('dist/wp-content/themes/bs/styles'));
 });
 
 gulp.task('scripts', function() {
-  return gulp.src([bower + '/jquery/dist/jquery.js', bower + '/bootstrap-sass/assets/javascripts/bootstrap.js','src/scripts/*.js'])
+  return gulp.src([bower + '/jquery/dist/wp-content/themes/bs/jquery.js', bower + '/bootstrap-sass/assets/javascripts/bootstrap.js','src/scripts/*.js'])
   .pipe(concat('main.js'))
   .pipe(uglify())
-  .pipe(gulp.dest('dist/scripts'));
+  .pipe(gulp.dest('dist/wp-content/themes/bs/scripts'));
 });
 
-gulp.task('default', ['styles', 'scripts'], function(){
-  var injectFilesCss = gulp.src(['dist/styles/main.css']);
-  var injectFilesJs = gulp.src(['dist/scripts/main.js']);
+gulp.task('default', ['styles', 'scripts', 'php', 'css'], function(){
+  var injectFilesCss = gulp.src(['dist/wp-content/themes/bs/styles/main.css']);
+  var injectFilesJs = gulp.src(['dist/wp-content/themes/bs/scripts/main.js']);
 
   var injectOptions = {
     addRootSlash: false,
-    ignorePath: ['src', 'dist']
+    ignorePath: ['src', 'dist/wp-content/themes/bs']
   };
 
   return gulp.src('src/*.html')
     .pipe(inject(injectFilesCss, injectOptions))
     .pipe(inject(injectFilesJs, injectOptions))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/wp-content/themes/bs'));
 });
 
 gulp.task('watch', function(){
