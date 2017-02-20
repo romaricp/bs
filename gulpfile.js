@@ -56,7 +56,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function() {
-  return gulp.src([bower + '/jquery/dist/wp-content/themes/bs/jquery.js', bower + '/bootstrap-sass/assets/javascripts/bootstrap.js','src/scripts/*.js'])
+  return gulp.src([bower + '/jquery/dist/jquery.js', bower + '/bootstrap-sass/assets/javascripts/bootstrap.js','./src/scripts/*.js'])
   .pipe(concat('main.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/wp-content/themes/bs/scripts'));
@@ -68,10 +68,10 @@ gulp.task('default', ['styles', 'scripts', 'php', 'css'], function(){
 
   var injectOptions = {
     addRootSlash: false,
-    ignorePath: ['src', 'dist/wp-content/themes/bs']
+    ignorePath: ['src', 'dist']
   };
 
-  return gulp.src('src/*.html')
+  return gulp.src('src/*.php')
     .pipe(inject(injectFilesCss, injectOptions))
     .pipe(inject(injectFilesJs, injectOptions))
     .pipe(gulp.dest('dist/wp-content/themes/bs'));
