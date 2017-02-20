@@ -72,8 +72,8 @@ gulp.task('default', ['styles', 'scripts', 'php', 'css'], function(){
   };
 
   return gulp.src('src/*.php')
-    .pipe(inject(injectFilesCss, injectOptions))
-    .pipe(inject(injectFilesJs, injectOptions))
+    //.pipe(inject(injectFilesCss, injectOptions))
+    //.pipe(inject(injectFilesJs, injectOptions))
     .pipe(gulp.dest('dist/wp-content/themes/bs'));
 });
 
