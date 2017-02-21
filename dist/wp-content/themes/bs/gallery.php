@@ -35,9 +35,11 @@ get_header(); ?>
 				<div class="container-gallery col-xl-6 col-md-9 col-sm-12">
 					<div class="bg-color">
 						<div class="col-md-4 col-sm-4">
+						<!--logo-->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/FM/logo.png" alt="" class="img-responsive">
 						</div>
 						<div class="col-md-8 col-sm-8">
+						<!--img large 1-->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/FM/800_400.png" alt="" class="img-responsive">
 						</div>
 					</div>
@@ -45,23 +47,27 @@ get_header(); ?>
 				<!-- img  cachées sm xs-->	
 				<div class="col-xl-2 col-md-3 col-sm-6 hidden-sm hidden-xs">
 					<div class="col-lg-12 bg-pink">
+					<!-- img 2 hidden-sm hidden-xs -->
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_2.png" alt="" class="img-responsive">
 					</div>
 				</div>	
 				<div class="col-xl-2 col-md-3 col-sm-6 col-xs-12">
 					<div class="col-lg-12">
+					<!-- img 3 -->
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_1.png" alt="" class="img-responsive">
 					</div>
 				</div>
 				<!-- img illustration -->	
 				<div class="col-xl-2 visible-xl">
 					<div class="col-lg-12">
+					<!-- illustration visible-xl-->
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_4.png" alt="" class="img-responsive">
 					</div>
 				</div>
 				<!-- img sm xs -->	
 				<div class="col-sm-6 visible-sm visible-xs col-xs-12">
 					<div class="col-lg-12">
+					<!-- img 4 visible-sm visible-xs -->
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_3.png" alt="" class="img-responsive">
 					</div>
 				</div>	
@@ -78,11 +84,12 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="col-sm-pull-6 col-sm-6 col-xs-12">
+						<!-- img associé texte-->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_2.png" alt="" class="img-responsive">
 						</div>
 					</div>
 				</div>
-				<!-- img cachée sm xs -->	
+				<!-- img 4 hidden-sm hidden-xs -->	
 				<div class="col-xl-2 col-md-3 col-sm-6 hidden-xs hidden-sm">
 					<div class="col-lg-12">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_3.png" alt="" class="img-responsive">
@@ -91,6 +98,7 @@ get_header(); ?>
 				<!-- img illustration -->
 				<div class="col-xl-2 visible-xl">
 					<div class="col-lg-12">
+					<!-- illustration 2 visible-xl-->
 						<img src="<?php echo get_template_directory_uri(); ?>/img/FM/400_4.png" alt="" class="img-responsive">
 					</div>
 				</div>

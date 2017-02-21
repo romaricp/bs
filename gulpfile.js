@@ -51,7 +51,7 @@ gulp.task('styles', function(){
     .pipe(inject(injectGlobalFiles, injectGlobalOptions))
     .pipe(inject(injectAppFiles, injectAppOptions))
     .pipe(sass())
-    //.pipe(csso())
+    .pipe(csso())
     .pipe(gulp.dest('dist/wp-content/themes/bs/styles'));
 });
 
