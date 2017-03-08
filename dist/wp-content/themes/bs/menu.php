@@ -14,7 +14,7 @@
 				break;
 
 			case 17:
-				echo '<li><a class="pink" href="'.get_page_link( $page->ID ).'">'.$page->post_title.'</a></li>';
+				echo '<li><a class="pink" href="mailto:louvrierso@gmail.com">'.$page->post_title.'</a></li>';
 				break;
 			
 			default:
