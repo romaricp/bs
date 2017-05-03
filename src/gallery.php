@@ -30,13 +30,15 @@ foreach (query_posts($projects) as $project) { ?>
 		<div class="container">
 			<h2 class="h1"><?php echo $project->post_title; ?></h2>
 			<h3 class="desc"><?php echo get_field('base_line', $project->ID); ?></h3>
-			<p class="info"><?php echo get_field('agence', $project->ID); ?> - Mise en ligne : <?php echo get_field('mise_en_ligne', $project->ID); ?></p>
-			<a href="http://www.france-montagnes.fr" class="link" target="_blank"> <?php echo get_field('url', $project->ID); ?></a>
+			<p class="info"><?php echo get_field('agence', $project->ID); ?> - <?php echo get_field('mise_en_ligne', $project->ID); ?></p>
+			<?php if (get_field('url', $project->ID) != null) { ?>
+				<a href="http://<?php echo get_field('url', $project->ID); ?>" class="link" target="_blank"> <?php echo get_field('url', $project->ID); ?></a>
+			<?php }  ?>
 		</div>
 		<div class="container-fluid">
-			<div class="row gallery gallery-fm">
-				<div class="container-gallery col-xl-6 col-md-9 col-sm-12">
-					<div class="bg-color">
+			<div class="row gallery">
+				<div class="container-gallery col-xl-6 col-md-9 col-sm-12" style="background-color: <?php echo get_field('color1', $project->ID); ?>">
+					<div>
 						<div class="col-md-4 col-sm-4">
 						<!--logo-->
 							<img src="<?php echo get_field('logo', $project->ID)['url'] ?>" alt="" class="img-responsive">
@@ -48,7 +50,7 @@ foreach (query_posts($projects) as $project) { ?>
 					</div>
 				</div>	
 				<div class="col-xl-2 col-md-3 col-sm-6 hidden-sm hidden-xs">
-					<div class="col-lg-12 bg-pink">
+					<div class="col-lg-12" style="background-color: <?php echo get_field('color2', $project->ID); ?>">
 					<!-- img 2 hidden-sm hidden-xs -->
 						<img src="<?php echo get_field('image_2', $project->ID)['url'] ?>" alt="" class="img-responsive">
 					</div>
@@ -72,7 +74,7 @@ foreach (query_posts($projects) as $project) { ?>
 					</div>
 				</div>	
 				<div class="container-gallery col-xl-4 col-md-6 col-sm-12">
-					<div class="bg-pink">
+					<div style="background-color: <?php echo get_field('color2', $project->ID); ?>" class="bg-pink">
 						<div class="col-sm-push-6 col-sm-6 col-xs-12">
 							<div class="tips ">
 								<?php echo get_field('liste', $project->ID); ?>

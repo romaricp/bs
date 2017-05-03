@@ -79,8 +79,8 @@ get_header(); ?>
 					</div>
 				</div>
 				<ul>
-					<li> <a href="">Page Facebook </a></li>
-					<li> <a href=""> Compte Twitter </a></li>
+					<li> <a href="https://www.facebook.com/Travelgram-1461254764193232/" target="_blank">Page Facebook </a></li>
+					<li> <a href="https://twitter.com/travelgram_app?lang=fr" target="_blank"> Compte Twitter </a></li>
 					<li> <a href=""> Télécharger le communiqué de presse </a> </li>
 				</ul>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/tg-reseauso.jpg" class="img-responsive center-block hidden-xs" alt="">

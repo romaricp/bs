@@ -19,15 +19,16 @@ get_header(); ?>
 			<h2>et Voyageuse </h2>
 			<ul class="contact">
 				<li><a href="mailto:louvrierso@gmail.com"> louvrierso@gmail.com </a></li>
-				<li><a href="#">linkedin.com/solene-louvrier</a></li>
+				<li><a href="https://www.linkedin.com/in/solene-louvrier" target="_blank">linkedin.com/in/solene-louvrier</a></li>
 				<li>06 87 56 36 92 </li>
 			</ul>
-			<img src="../img/profil.jpg" class="img-responsive center-block">
+			<img src="img/profil.jpg" class="img-responsive center-block">
 			<div class="experience voyage">
 				<div class="text-center">
 					<h3>Voyage autour du Monde</h3>
 					<p class="date">Juin 2016 - Mai 2017</p>
 					<p class="description">Amérique du Nord - Amérique du Sud - Océanie - Asie du Sud-Est <br> 8 semaines de Volontariat (WWOOFING - HelpX) au Canada, aux US, en Argentine et en Nouvelle-Zélande </p>
+					<p class="description"><a href="https://vimeo.com/215479748" target="_blank">Voir la vidéo </a> - <a href="http://letsgetlost.travelgram.co" target="_blank">Voir le Travelgram </a></p>
 				</div>	
 			</div>
 			<div class="experience travelgram">

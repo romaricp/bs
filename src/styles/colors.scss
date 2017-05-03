@@ -132,10 +132,11 @@ a.btn {
 		font-family: $serif;
 		font-style: italic;
 		font-size:.6em;
+		margin-bottom: 0;
 	}
 
 	a.link {
-		display: block;
+		display: inline-block;
 		margin-bottom: 40px;
 		margin-top:40px;
 	}
