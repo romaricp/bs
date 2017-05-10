@@ -22,7 +22,7 @@ get_header(); ?>
 				<li><a href="https://www.linkedin.com/in/solene-louvrier" target="_blank">linkedin.com/in/solene-louvrier</a></li>
 				<li>06 87 56 36 92 </li>
 			</ul>
-			<img src="img/profil.jpg" class="img-responsive center-block">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/profil.jpg" class="img-responsive center-block">
 			<div class="experience voyage">
 				<div class="text-center">
 					<h3>Voyage autour du Monde</h3>

@@ -98,6 +98,11 @@ h3 {
 
 .tips {
 	font-family: $cursive;
+	padding-right: 15px;
+
+	ul {
+		padding-left: 0;
+	}
 
 	ul li { 
 		list-style: none;
@@ -123,6 +128,9 @@ a.btn {
 
 // project 
 .project {
+	>.container {
+		margin-bottom: 40px;
+	}
 	h3.desc {
 		font-size: 1em;
 		margin-bottom: 10px;
@@ -137,7 +145,6 @@ a.btn {
 
 	a.link {
 		display: inline-block;
-		margin-bottom: 40px;
 		margin-top:40px;
 	}
 }
