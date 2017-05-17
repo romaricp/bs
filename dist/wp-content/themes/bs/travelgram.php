@@ -75,13 +75,13 @@ get_header(); ?>
 				<div class="row">
 					<div class="title col-md-8">
 						<div class="number">#03.</div>
-						<h2> Réseaux sociaux <br > & communiqué de presse </h2>
+						<h2> Réseaux sociaux <br > & dossier de presse </h2>
 					</div>
 				</div>
 				<ul>
 					<li> <a href="https://www.facebook.com/Travelgram-1461254764193232/" target="_blank">Page Facebook </a></li>
 					<li> <a href="https://twitter.com/travelgram_app?lang=fr" target="_blank"> Compte Twitter </a></li>
-					<li> <a href=""> Télécharger le communiqué de presse </a> </li>
+					<li> <a href="http://www.travelgram.co/presse/dossier_presse_travelgram.pdf" target="_blank"> Télécharger le dossier de presse </a> </li>
 				</ul>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/tg-reseauso.jpg" class="img-responsive center-block hidden-xs" alt="">
 				<div class="row fb-mobile visible-xs">

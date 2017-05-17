@@ -94,6 +94,7 @@ body {
 		height: 1px;
 		width: 100%;
 		background: #fff;
+		z-index: 9;
 	}
 
 	.container-gallery .bg-pink {
@@ -105,6 +106,10 @@ body {
 @media(max-width:767px) {
 	.gallery {
 
+		>div:after, {
+			content: none;
+		}
+
 		.col-md-4 {
 			position: inherit;
 			margin-top:0px;
@@ -112,10 +117,15 @@ body {
 			img {
 				margin-left: auto;
 				margin-right: auto;
+				max-width: 50%;
 			}
 		}
 		.container-gallery .bg-pink {
 			display: block;
+		}
+
+		.container-gallery .col-md-8 {
+			border-top: 1px solid white;
 		}
 
 		.tips {
@@ -147,7 +157,7 @@ body {
 				text-decoration: underline;
 			}
 	}
-	.prev h3:before {
+	.prev h3 a:before {
 		content: "";
 		float: left;
 		width: 15px;
@@ -156,7 +166,7 @@ body {
 		margin-right: 20px;
 	}
 
-	.next h3:after {
+	.next h3 a:after {
 		content: "";
 		float: right;
 		width: 15px;
@@ -166,6 +176,26 @@ body {
 	}
 	.next {
 		text-align: right;
+	}
+}
+
+@media(max-width:767px) {
+	.nav-project {
+		.col-xs-6 {
+			padding: 0;
+		}
+
+		h3 {
+			font-size: .7em;
+		}
+
+		.next h3 a:after {
+			margin-right: 10px;
+		}
+
+		.next h3 a:after {
+			margin-left: 10px;
+		}
 	}
 }
 
@@ -205,11 +235,16 @@ header {
 }
 
 @media(max-width: 767px) {
+	.navbar {
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
 	header {
 		padding-left: 15px;
 		padding-right:15px;
 
 		h2 {
+			font-size: 1em;
 		}
 	}
 }
@@ -302,6 +337,12 @@ header {
 		text-align: left;
 		line-height: 1.4;
 		padding-right: 50px;
+	}
+}
+
+@media(max-width: 767px) {
+	.breadcrumb {
+		margin-top: 20px;
 	}
 }
 
@@ -477,6 +518,7 @@ header {
 		padding-bottom: 30px;
 		position: relative;
 		margin-top: 50px;
+		overflow: hidden; 
 	}
 
 	.bg-pink:before,

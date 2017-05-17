@@ -162,6 +162,9 @@
 	.number {
 		font-size: 1.5em!important; 
 	}
+	.travelgram.header {
+		height: 330px; 
+	}
 }
 
 @media (max-width:550px) {
@@ -223,7 +226,7 @@
 		.col-xs-6 {
 			padding-left: 0.5px;
 			padding-right: 0.5px;
-			margin-bottom: 2px;
+			margin-bottom: 1px;
 		}
 	}
 }
