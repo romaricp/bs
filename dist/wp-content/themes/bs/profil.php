@@ -34,28 +34,28 @@ get_header(); ?>
 			<div class="experience travelgram">
 				<div class="text-center">
 					<h3>Travelgram</h3>
-					<p class="date">Juin 2016 - Mai 2017</p>
+					<p class="date">Depuis Septembre 2015</p>
 					<p class="description">Co-fondateur - Direction Artistique <br> <a href="www.travelgram.co" target="_blank">www.travelgram.co</a> </p>
 				</div>	
 			</div>
 			<div class="experience lba">
 				<div class="text-center">
 					<h3>La Bonne Agence</h3>
-					<p class="date">Juin 2016 - Mai 2017</p>
+					<p class="date">Février 2014 - Mai 2016</p>
 					<p class="description"> Webdesigner - Intégrateur <br> Grenoble (38)</p>
 				</div>	
 			</div>
 			<div class="experience orthodidacte">
 				<div class="text-center">
 					<h3>Orthodidacte</h3>
-					<p class="date">Juin 2016 - Mai 2017</p>
+					<p class="date">Juillet 2013 - Janvier 2014</p>
 					<p class="description">Webdesigner - Intégrateur <br> Grenoble (38) </p>
 				</div>	
 			</div>
 			<div class="experience ookapi">
 				<div class="text-center">
 					<h3>Ookapi</h3>
-					<p class="date">Juin 2016 - Mai 2017</p>
+					<p class="date">Janvier 2013 - Juin 2013</p>
 					<p class="description">Stagiaire Chef de Projet - UI/UX Designer <br> Grenoble (38) </p>
 				</div>	
 			</div>
@@ -107,21 +107,21 @@ get_header(); ?>
 			<div class="container">
 				<div class="formation">
 					<div class="text-center">
-						<p class="date">Juin 2016 - Mai 2017</p>
+						<p class="date">2011 / 2013</p>
 						<h3>Master Ingénierie des Medias</h3>
 						<p class="description">Institut Ingémédia <br> Université du Sud Toulon Var (83) </p>
 					</div>	
 				</div>
 				<div class="formation">
 					<div class="text-center">
-						<p class="date">Juin 2016 - Mai 2017</p>
+						<p class="date">2010 / 2011</p>
 						<h3>Bachelor Digital Media</h3>
 						<p class="description">Napier University<br> Edimbourg (Ecosse)</p>
 					</div>	
 				</div>
 				<div class="formation">
 					<div class="text-center">
-						<p class="date">Juin 2016 - Mai 2017</p>
+						<p class="date">2008 / 2010</p>
 						<h3>DUT Services et Réseaux de Communication </h3>
 						<p class="description">IUT Dijon <br> Université de Bourgogne (21) </p>
 					</div>	
@@ -132,7 +132,7 @@ get_header(); ?>
 			<p>Passionée de <b>Danse</b>, <b>Freeline</b> et <b>Voyage</b></p>
 		</div>
 		<div class="container text-center cv">
-			<a class="btn"> Télécharger CV </a>
+			<a class="btn" href="<?php echo get_site_url(); ?>/cv-solene-2017-web.pdf" target="_blank"> Télécharger CV </a> 
 		</div>
 
 <?php get_footer(); ?>
