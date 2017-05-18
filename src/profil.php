@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="profil">
 		<header class="header">
 			<div class="navbar row">
-				<h2 class="col-md-4"><a href="index.html"><b>Solène </b><span> Louvrier </span> </a></h2>
+				<h2 class="col-md-4 col-lg-3"><a href="<?php echo get_site_url(); ?>"> <span class="bold">Solène </span><span> Louvrier </span> </a></h2>
 				<div class="burger pull-right">
 					<span> </span>
 				</div>

@@ -6,7 +6,7 @@ get_header(); ?>
 
 	<header class="header travelgram">
 		<div class="navbar row">
-			<h2 class="col-lg-3 col-md-4"><a href="<?php echo get_site_url(); ?>"><b>Solene </b><span> Louvrier </span> </a></h2>
+			<h2 class="col-md-4 col-lg-3"><a href="<?php echo get_site_url(); ?>"> <span class="bold">Solène </span><span> Louvrier </span> </a></h2>
 			<div class="burger pull-right">
 				<span> </span>
 			</div>

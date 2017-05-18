@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php include_once( 'menu.php' ); ?>
 		</header>
 		<div class="content container">
-			<h1><a href="<?php echo get_page_link(9); ?>">Webdesign</a>, <a href="<?php echo get_page_link(11); ?>">Design mobile</a>, <br> <a href="<?php echo get_page_link(13); ?>">Intégration</a> </h1>
+			<h1><a href="<?php echo get_page_link(9); ?>">Webdesign,</a> <a href="<?php echo get_page_link(11); ?>">Design mobile,</a> <br> <a href="<?php echo get_page_link(13); ?>">Intégration</a> </h1>
 		</div>
 	</div>
 

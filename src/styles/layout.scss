@@ -232,6 +232,11 @@ header {
 .navbar {
 	margin-bottom: 50px;
 	padding-top: 50px;
+
+	span.bold {
+		 font-family: "AvenirNext-Bold",Helvetica,Arial,sans-serif;
+		 letter-spacing: 0;
+	}
 }
 
 @media(max-width: 767px) {
