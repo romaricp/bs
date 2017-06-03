@@ -5,7 +5,7 @@ header {
     right: 0;
     cursor: pointer;
     padding: 19px 30px 20px 10px;
-    z-index: 10;
+    z-index: 999;
 
     span {
       cursor: pointer;
@@ -102,8 +102,9 @@ header {
 
     a {
       color: $white;
-      font-size: 1.25em;
+      font-size: 1.25em!important;
       font-family: $title;
+      font-weight: 900;
     }
 
     a:hover {
@@ -127,6 +128,7 @@ header {
 }
 
 .mobmenu.open {
+  z-index:99;
   right: 0;
   -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 50px 0px 50px rgba(0, 0, 0, 0.1);

@@ -234,7 +234,8 @@ header {
 	padding-top: 50px;
 
 	span.bold {
-		 font-family: "AvenirNext-Bold",Helvetica,Arial,sans-serif;
+		 font-family: $title;
+		 font-weight:900;
 		 letter-spacing: 0;
 	}
 }
@@ -275,8 +276,17 @@ header {
 			display: inline-block;
 			margin-bottom: 10px;
 		}
-		a:hover {
+		a:hover,
+		a:focus,
+		a:active {
 			text-decoration: none;
+		}
+
+		a:after {
+			content:"";
+			opacity:0;
+			transition-property: all;
+    		transition-duration: 1s;
 		}
 
 		a:hover:after {
@@ -288,6 +298,9 @@ header {
 			width: 100%;
 			height: 8px;
 			background: url(../img/dotted.svg) repeat-x;
+			opacity:1;
+			transition-property: all;
+    		transition-duration: 1s;
 		}
 
 	}
@@ -303,6 +316,7 @@ header {
 
 	h1 {
 		font-family: $sans-serif;
+		font-weight:400;
 		margin-bottom: 0;
 		margin-top: 0;
 		font-size: 15.6px; 
@@ -415,6 +429,7 @@ header {
 		font-style: normal;
 		margin-top: 0;
 		font-size: 1.25em;
+		font-weight:900;
 	}
 
 	.date {
@@ -455,7 +470,7 @@ header {
 	.experience.travelgram {
 		h3:before {
 			background: url(../img/travelgram.svg) center center no-repeat #fc6d4b;
-			background-size: 55%;
+			background-size: 55%; 
 		}
 	}
 
@@ -490,6 +505,7 @@ header {
 .competence {
 	text-transform: uppercase;
 	font-family: $title;
+	font-weight:900;
 	text-align: center;
 	font-size: 0.9em;
 	margin-top: 60px;
