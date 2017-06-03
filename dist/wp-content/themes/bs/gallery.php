@@ -32,7 +32,7 @@ foreach (query_posts($projects) as $project) { ?>
 			<h3 class="desc"><?php echo get_field('base_line', $project->ID); ?></h3>
 			<p class="info"><?php echo get_field('agence', $project->ID); ?> - <?php echo get_field('mise_en_ligne', $project->ID); ?></p>
 			<?php if (get_field('url', $project->ID) != null) { ?>
-				<a href="http://<?php echo get_field('url', $project->ID); ?>" class="link" target="_blank"> <?php echo get_field('url', $project->ID); ?></a>
+				<a href="http://<?php echo get_field('url', $project->ID); ?>" class="link" target="_blank"> <?php echo get_field('url_libelle', $project->ID); ?></a>
 			<?php }  ?>
 		</div>
 		<div class="container-fluid">
